@@ -1,0 +1,13 @@
+name: GitHub Actions - Workflow run In Progress Template
+
+on:
+  workflow_run:
+    workflows: ["GitHub Actions - Trigger"]
+    types: [in_progress]
+
+jobs:
+  inprogress_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Workflow in progress executando
+        run: echo "Workflow Run In Progress executado"
