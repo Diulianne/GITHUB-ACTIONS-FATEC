@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger executado
-        run: echo Trigger finalizado
+        run: "echo Trigger finalizado"
