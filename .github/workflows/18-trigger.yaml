@@ -1,0 +1,13 @@
+name: GitHub Actions - Trigger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger executado
+        run: "echo Trigger finalizado"
